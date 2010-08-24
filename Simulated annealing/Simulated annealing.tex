@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{float} %utiliser H pour forcer à mettre l'image où on veut
+\usepackage{lscape} %utilisation du mode paysage
+\usepackage{mathbbol} % permet d'avoir le vrai symbol pour les reels grace a mathbb
+\usepackage{enumerate}
+\usepackage{marvosym}	
+\usepackage{moreverb} % permet d'utiliser verbatimtab : conservation la tabulation 
+
+
+\setlength {\textwidth}{16cm}
+\setlength {\textheight}{21cm} 
+\setlength {\oddsidemargin}{0cm}
+\setlength{\headsep}{5pt} 
+
+\newcommand\bn{\boldsymbol{\nabla}}
+\newcommand\bo{\boldsymbol{\Omega}}
+\newcommand\br{\mathbf{r}}
+\newcommand\la{\left\langle}
+\newcommand\ra{\right\rangle}
+\newcommand\bs{\boldsymbol}
+\newcommand\red{\textcolor{red}}
+
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\renewcommand{\[}{\left[}
+\renewcommand{\]}{\right]}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\begin{document}
+\title{\textsc{\huge{Simulated annealing }}}
+\author{Bruno Turcksin} 
+\date{}
+\maketitle
+
+\section{Simulated annealing}
+We try to solve the well-known problem using the simulated annealing. The advantage of the simulated annealing over the deterministic method is that it can escape a local minima. Unlike the deterministic methods which have to ``go down'' the objective function, the simulated annealing can ``go up''. The disadvantage of the simulated annealing is that the convergence can be very slow.
+
+We try 
+
+\section{Equations}
+We recall briefly the equations :
+\begin{align}
+f &= \sum_{(i,j)\in \mathcal{T}}(D_{ij}-\delta_{ij})^2\\
+h_1 &= \gamma - \sum_{(i,j)\in \mathcal{D}} \frac{V_{ij}}{V} \nu\(D_{ij}-\delta_{ij}\)\geq 0\\
+h_2 &= J \geq 0
+\end{align}
+
+\end{document}
